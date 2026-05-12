@@ -75,14 +75,45 @@ Output:
 ## File Structure
 
 ```
-ctrader-app/
-├── .env.example        # Config template
-├── .env                # Your config (git-ignored)
-├── tokens.json         # OAuth tokens (git-ignored)
-├── requirements.txt    # Python dependencies
-├── get_token.py        # OAuth token retrieval script
-├── ctrader_client.py   # Main client application
-└── README.md
+trading-journal-dashboard/
+├── README.md
+
+├── api
+│   ├── __init__.py
+│   └── main.py
+
+├── dashboard
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── src
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── vite.config.js
+├── docs
+│   └── DAEMON_DOCS.md
+├── get_token.py
+├── journal
+│   ├── __init__.py
+│   ├── ctrader_client.py
+│   ├── models.py
+│   ├── recorder.py
+│   └── sessions.py
+
+├── journal_cli.py
+├── journal_daemon.py
+
+├── live-chart-tft
+│   ├── ctrader_tft_chart.ino
+│   ├── relay_server.py
+│   └── requirements.txt
+
+├── requirements.txt
+├── tokens.json
+└── uploads
+    └── screenshots
+
 ```
 
 ## Notes
