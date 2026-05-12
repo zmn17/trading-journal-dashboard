@@ -1555,7 +1555,7 @@ export default function App() {
         <span
           style={{ fontSize: 17, fontWeight: 700, letterSpacing: "-0.02em" }}
         >
-          Trading Journal
+          zeeTrading Journal
         </span>
         <div style={{ display: "flex", gap: 3 }}>
           {[
