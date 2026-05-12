@@ -20,7 +20,7 @@ A Python application to connect to the cTrader trading platform via Open API (TC
 
 ```bash
 # Clone / copy files, then:
-cd ctrader-app
+cd trading-journal-dashboard
 
 # Install dependencies
 pip install -r requirements.txt
@@ -48,6 +48,7 @@ python ctrader_client.py
 ```
 
 Output:
+
 ```
 === cTrader Open API Client ===
 
