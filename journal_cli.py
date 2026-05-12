@@ -20,7 +20,7 @@ from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 from sqlalchemy import desc
 
-from app.models.models import get_engine, get_session_factory, Trade, TradeNote
+from journal.models import get_engine, get_session_factory, Trade, TradeNote
 
 load_dotenv()
 

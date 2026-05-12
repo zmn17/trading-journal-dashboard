@@ -8,8 +8,8 @@ Called by the daemon on execution events.
 from datetime import datetime, timezone
 from sqlalchemy.orm import Session as DBSession
 
-from app.models.models import Trade
-from app.trading.sessions import detect_session
+from journal.models import Trade
+from journal.sessions import detect_session
 
 
 def ts_to_datetime(timestamp_ms: int) -> datetime:

@@ -25,8 +25,8 @@ from ctrader_open_api.messages.OpenApiCommonMessages_pb2 import *
 from ctrader_open_api.messages.OpenApiMessages_pb2 import *
 from ctrader_open_api.messages.OpenApiModelMessages_pb2 import *
 
-from app.models.models import get_engine, get_session_factory, create_tables
-from app.trading.recorder import (
+from journal.models import get_engine, get_session_factory, create_tables
+from journal.recorder import (
     record_position_open,
     record_position_close,
     record_sl_tp_update,
